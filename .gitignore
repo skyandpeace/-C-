@@ -3,3 +3,5 @@
 ################################################################################
 
 /WindowsFormsApp4/bin/Debug
+/WindowsFormsApp4/obj/Debug
+/.vs/WindowsFormsApp4/v15/Server/sqlite3/db.lock
