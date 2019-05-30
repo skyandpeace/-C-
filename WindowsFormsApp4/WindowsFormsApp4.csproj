@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="resource\CoolBigheartedHen-size_restricted.gif" />
+    <Content Include="resource\giphy.gif" />
+    <Content Include="resource\tenor %281%29.gif" />
+    <Content Include="resource\tenor.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

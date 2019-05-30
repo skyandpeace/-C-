@@ -40,8 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnstart = new System.Windows.Forms.Button();
+            this.listresult = new System.Windows.Forms.ListBox();
+            this.picpusheen = new System.Windows.Forms.PictureBox();
+            this.pusheen = new System.Windows.Forms.ImageList(this.components);
+            this.piclbl = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxcom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picpusheen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclbl)).BeginInit();
             this.SuspendLayout();
             // 
             // picboxplayer
@@ -92,7 +98,7 @@
             // lbltime
             // 
             this.lbltime.AutoSize = true;
-            this.lbltime.Location = new System.Drawing.Point(351, 136);
+            this.lbltime.Location = new System.Drawing.Point(325, 132);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(33, 12);
             this.lbltime.TabIndex = 4;
@@ -136,11 +142,49 @@
             this.btnstart.UseVisualStyleBackColor = true;
             this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
+            // listresult
+            // 
+            this.listresult.FormattingEnabled = true;
+            this.listresult.ItemHeight = 12;
+            this.listresult.Location = new System.Drawing.Point(516, 249);
+            this.listresult.Name = "listresult";
+            this.listresult.Size = new System.Drawing.Size(144, 124);
+            this.listresult.TabIndex = 8;
+            // 
+            // picpusheen
+            // 
+            this.picpusheen.Location = new System.Drawing.Point(58, 262);
+            this.picpusheen.Name = "picpusheen";
+            this.picpusheen.Size = new System.Drawing.Size(202, 159);
+            this.picpusheen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picpusheen.TabIndex = 9;
+            this.picpusheen.TabStop = false;
+            // 
+            // pusheen
+            // 
+            this.pusheen.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("pusheen.ImageStream")));
+            this.pusheen.TransparentColor = System.Drawing.Color.Transparent;
+            this.pusheen.Images.SetKeyName(0, "tenor (1).gif");
+            this.pusheen.Images.SetKeyName(1, "tenor.gif");
+            this.pusheen.Images.SetKeyName(2, "CoolBigheartedHen-size_restricted.gif");
+            this.pusheen.Images.SetKeyName(3, "giphy.gif");
+            // 
+            // piclbl
+            // 
+            this.piclbl.Location = new System.Drawing.Point(272, 88);
+            this.piclbl.Name = "piclbl";
+            this.piclbl.Size = new System.Drawing.Size(202, 159);
+            this.piclbl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.piclbl.TabIndex = 10;
+            this.piclbl.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picpusheen);
+            this.Controls.Add(this.listresult);
             this.Controls.Add(this.btnstart);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,10 +193,14 @@
             this.Controls.Add(this.msktext);
             this.Controls.Add(this.picboxcom);
             this.Controls.Add(this.picboxplayer);
+            this.Controls.Add(this.piclbl);
             this.Name = "Form1";
             this.Text = "剪刀、石頭、布互動遊戲";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxcom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picpusheen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclbl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,6 +218,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnstart;
+        private System.Windows.Forms.ListBox listresult;
+        private System.Windows.Forms.PictureBox picpusheen;
+        private System.Windows.Forms.ImageList pusheen;
+        private System.Windows.Forms.PictureBox piclbl;
     }
 }
 
